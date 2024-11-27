@@ -24,7 +24,7 @@ def get_location_names():
     return response
 
 
-@app.route('/predict_home_price', methods=['GET'])
+@app.route('/predict_home_price', methods=['GET', 'POST'])
 def predict_home_price():
     try:
         # Parse input parameters
