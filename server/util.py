@@ -2,6 +2,10 @@ import pickle
 import json
 import numpy as np
 
+__data_columns = None
+__locations = None
+__model = None
+
 
 def get_estimated_price(location, sqft, bhk, bath):
     try:
