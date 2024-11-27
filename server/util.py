@@ -4,7 +4,6 @@ import numpy as np
 
 __data_columns = None
 __locations = None
-__model = None
 
 
 def get_estimated_price(location, sqft, bhk, bath):
@@ -32,9 +31,8 @@ def load_saved_artifacts():
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]  # first 3 columns are sqft, bath, bhk
 
-    if __model is None:
-        with open('./artifacts/banglore_home_prices_model.pickle', 'rb') as f:
-            __model = pickle.load(f)
+    with open('./artifacts/banglore_home_prices_model.pickle', 'rb') as f:
+        __model = pickle.load(f)
     print("loading saved artifacts...done")
 
 
