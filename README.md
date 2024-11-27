@@ -13,7 +13,7 @@ The project consists of:
 1. **Machine Learning Model**:
    - Linear Regression (Best performing model with R² score of **0.818**).
 2. **REST API**:
-   - Exposes a `/predict` endpoint for predictions.
+   - Exposes a `/predict_home_price` endpoint for predictions.
 3. **Frontend**:
    - User-friendly form for inputting property details.
    - Displays predicted prices fetched from the backend.
@@ -23,15 +23,15 @@ The project consists of:
 
 ## Images:
 
+- **User Interface**:
+  ![UI](src/ui.png)
+
 - **Netlify Deployment**:
   ![Netlify](src/netlify.png)
 
 - **Render Deployment**:
   ![Render](src/render.png)
-
-- **User Interface**:
-  ![UI](src/ui.png)
-
+  
 ---
 
 ## Deployment Architecture
@@ -47,11 +47,11 @@ The project consists of:
 ## ML Performance Metrics
 The machine learning models used in this project were evaluated on multiple performance metrics to ensure the best possible results. Below are the metrics for the top models:
 
-| Model               | R² Score | Mean Squared Error (MSE) | 
-|---------------------|----------|--------------------------|
-| **Linear Regression** | 0.818    | 12,300,000               | 
-| **Lasso Regression**  | 0.806    | 13,500,000               | 
-| **Decision Tree**     | 0.760    | 15,000,000               | 
+| Model               | R² Score |
+|---------------------|----------|
+| **Linear Regression** | 0.818    |  
+| **Lasso Regression**  | 0.806    | 
+| **Decision Tree**     | 0.760    | 
 
 These performance metrics highlight that **Linear Regression** performed the best, achieving the highest R² score, which indicates the model’s ability to explain the variance in the home price data.
 
