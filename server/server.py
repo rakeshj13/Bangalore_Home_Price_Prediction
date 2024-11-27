@@ -28,7 +28,7 @@ def get_location_names():
 def predict_home_price():
     try:
         # Parse input parameters
-        total_sqft = float(request.args.get('total_sqft', 0))
+        total_sqft = float(request.form.get('total_sqft', 0))
         location = request.args.get('location', '')
         bhk = int(request.args.get('bhk', 0))
         bath = int(request.args.get('bath', 0))
